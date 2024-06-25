@@ -1121,7 +1121,7 @@
                 "t": "set",
                 "p": "centreid",
                 "pt": "flow",
-                "to": "\"io-wis2dev-test\" & $flowContext(\"centreidnumber\")",
+                "to": "\"io-wis2dev-\" & $flowContext(\"centreidnumber\") & \"-test\"",
                 "tot": "jsonata"
             }
         ],
@@ -1293,7 +1293,7 @@
                 "t": "set",
                 "p": "centreid",
                 "pt": "flow",
-                "to": "\"io-wis2dev-test\" & $flowContext(\"centreidnumber\")",
+                "to": "\"io-wis2dev-\" & $flowContext(\"centreidnumber\") & \"-test\"",
                 "tot": "jsonata"
             }
         ],
@@ -1420,7 +1420,7 @@
                 "t": "set",
                 "p": "centreid",
                 "pt": "flow",
-                "to": "\"io-wis2dev-test\" & $flowContext(\"centreidnumber\")",
+                "to": "\"io-wis2dev-\" & $flowContext(\"centreidnumber\") & \"-test\"",
                 "tot": "jsonata"
             }
         ],
@@ -1547,7 +1547,7 @@
                 "t": "set",
                 "p": "centreid",
                 "pt": "flow",
-                "to": "\"io-wis2dev-test\" & $flowContext(\"centreidnumber\")",
+                "to": "\"io-wis2dev-\" & $flowContext(\"centreidnumber\") & \"-test\"",
                 "tot": "jsonata"
             }
         ],
@@ -1674,7 +1674,7 @@
                 "t": "set",
                 "p": "centreid",
                 "pt": "flow",
-                "to": "\"io-wis2dev-test\" & $flowContext(\"centreidnumber\")",
+                "to": "\"io-wis2dev-\" & $flowContext(\"centreidnumber\") & \"-test\"",
                 "tot": "jsonata"
             }
         ],
@@ -1801,7 +1801,7 @@
                 "t": "set",
                 "p": "centreid",
                 "pt": "flow",
-                "to": "\"io-wis2dev-test\" & $flowContext(\"centreidnumber\")",
+                "to": "\"io-wis2dev-\" & $flowContext(\"centreidnumber\") & \"-test\"",
                 "tot": "jsonata"
             }
         ],
@@ -1928,7 +1928,7 @@
                 "t": "set",
                 "p": "centreid",
                 "pt": "flow",
-                "to": "\"io-wis2dev-test\" & $flowContext(\"centreidnumber\")",
+                "to": "\"io-wis2dev-\" & $flowContext(\"centreidnumber\") & \"-test\"",
                 "tot": "jsonata"
             }
         ],
@@ -2055,7 +2055,7 @@
                 "t": "set",
                 "p": "centreid",
                 "pt": "flow",
-                "to": "\"io-wis2dev-test\" & $flowContext(\"centreidnumber\")",
+                "to": "\"io-wis2dev-\" & $flowContext(\"centreidnumber\") & \"-test\"",
                 "tot": "jsonata"
             }
         ],
@@ -2182,7 +2182,7 @@
                 "t": "set",
                 "p": "centreid",
                 "pt": "flow",
-                "to": "\"io-wis2dev-test\" & $flowContext(\"centreidnumber\")",
+                "to": "\"io-wis2dev-\" & $flowContext(\"centreidnumber\") & \"-test\"",
                 "tot": "jsonata"
             }
         ],
@@ -2309,7 +2309,7 @@
                 "t": "set",
                 "p": "centreid",
                 "pt": "flow",
-                "to": "\"io-wis2dev-test\" & $flowContext(\"centreidnumber\")",
+                "to": "\"io-wis2dev-\" & $flowContext(\"centreidnumber\") & \"-test\"",
                 "tot": "jsonata"
             }
         ],
@@ -2436,7 +2436,7 @@
                 "t": "set",
                 "p": "centreid",
                 "pt": "flow",
-                "to": "\"io-wis2dev-test\" & $flowContext(\"centreidnumber\")",
+                "to": "\"io-wis2dev-\" & $flowContext(\"centreidnumber\") & \"-test\"",
                 "tot": "jsonata"
             }
         ],
@@ -2563,7 +2563,7 @@
                 "t": "set",
                 "p": "centreid",
                 "pt": "flow",
-                "to": "\"io-wis2dev-test\" & $flowContext(\"centreidnumber\")",
+                "to": "\"io-wis2dev-\" & $flowContext(\"centreidnumber\") & \"-test\"",
                 "tot": "jsonata"
             }
         ],
@@ -2690,7 +2690,7 @@
                 "t": "set",
                 "p": "centreid",
                 "pt": "flow",
-                "to": "\"io-wis2dev-test\" & $flowContext(\"centreidnumber\")",
+                "to": "\"io-wis2dev-\" & $flowContext(\"centreidnumber\") & \"-test\"",
                 "tot": "jsonata"
             }
         ],
@@ -2817,7 +2817,7 @@
                 "t": "set",
                 "p": "centreid",
                 "pt": "flow",
-                "to": "\"io-wis2dev-test\" & $flowContext(\"centreidnumber\")",
+                "to": "\"io-wis2dev-\" & $flowContext(\"centreidnumber\") & \"-test\"",
                 "tot": "jsonata"
             }
         ],
@@ -2944,7 +2944,7 @@
                 "t": "set",
                 "p": "centreid",
                 "pt": "flow",
-                "to": "\"io-wis2dev-test\" & $flowContext(\"centreidnumber\")",
+                "to": "\"io-wis2dev-\" & $flowContext(\"centreidnumber\") & \"-test\"",
                 "tot": "jsonata"
             }
         ],
@@ -3071,7 +3071,7 @@
                 "t": "set",
                 "p": "centreid",
                 "pt": "flow",
-                "to": "\"io-wis2dev-test\" & $flowContext(\"centreidnumber\")",
+                "to": "\"io-wis2dev-\" & $flowContext(\"centreidnumber\") & \"-test\"",
                 "tot": "jsonata"
             }
         ],
@@ -3198,7 +3198,7 @@
                 "t": "set",
                 "p": "centreid",
                 "pt": "flow",
-                "to": "\"io-wis2dev-test\" & $flowContext(\"centreidnumber\")",
+                "to": "\"io-wis2dev-\" & $flowContext(\"centreidnumber\") & \"-test\"",
                 "tot": "jsonata"
             }
         ],
@@ -3325,7 +3325,7 @@
                 "t": "set",
                 "p": "centreid",
                 "pt": "flow",
-                "to": "\"io-wis2dev-test\" & $flowContext(\"centreidnumber\")",
+                "to": "\"io-wis2dev-\" & $flowContext(\"centreidnumber\") & \"-test\"",
                 "tot": "jsonata"
             }
         ],
@@ -3452,7 +3452,7 @@
                 "t": "set",
                 "p": "centreid",
                 "pt": "flow",
-                "to": "\"io-wis2dev-test\" & $flowContext(\"centreidnumber\")",
+                "to": "\"io-wis2dev-\" & $flowContext(\"centreidnumber\") & \"-test\"",
                 "tot": "jsonata"
             }
         ],
@@ -3579,7 +3579,7 @@
                 "t": "set",
                 "p": "centreid",
                 "pt": "flow",
-                "to": "\"io-wis2dev-test\" & $flowContext(\"centreidnumber\")",
+                "to": "\"io-wis2dev-\" & $flowContext(\"centreidnumber\") & \"-test\"",
                 "tot": "jsonata"
             }
         ],

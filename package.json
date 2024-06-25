@@ -2,7 +2,20 @@
     "name": "WIS2BenchGlobalBroker",
     "description": "A Node-RED Project",
     "version": "0.0.1",
-    "dependencies": {},
+    "dependencies": {
+        "node-red": "3.1.8",
+        "node-red-contrib-controltimer": "0.4.1",
+        "node-red-contrib-createrandom": "1.2.0"
+    },
+    "main": "node_modules/node-red/red/red.js",
+    "scripts": {
+        "start": "node $NODE_OPTIONS node_modules/node-red/red.js $FLOWS",
+        "debug": "node --inspect=0.0.0.0:9229 $NODE_OPTIONS node_modules/node-red/red.js $FLOWS",
+        "debug_brk": "node --inspect=0.0.0.0:9229 --inspect-brk $NODE_OPTIONS node_modules/node-red/red.js $FLOWS"
+    },
+    "engines": {
+        "node": ">=12"
+    },
     "node-red": {
         "settings": {
             "flowFile": "flows.json",
