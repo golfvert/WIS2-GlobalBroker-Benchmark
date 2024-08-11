@@ -292,19 +292,19 @@
         "category": "",
         "in": [
             {
-                "x": 80,
-                "y": 100,
+                "x": 60,
+                "y": 80,
                 "wires": [
                     {
-                        "id": "69873070d5f275f3"
+                        "id": "40fc0600f9ec78e7"
                     }
                 ]
             }
         ],
         "out": [
             {
-                "x": 1100,
-                "y": 100,
+                "x": 1240,
+                "y": 120,
                 "wires": [
                     {
                         "id": "500a998cd7b017b5",
@@ -398,7 +398,7 @@
         "type": "switch",
         "z": "f33711211a4b2d3f",
         "name": "Centre ID",
-        "property": "payload.centreid",
+        "property": "payload.configuration.setup.centreid",
         "propertyType": "msg",
         "rules": [
             {
@@ -410,11 +410,11 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 320,
-        "y": 80,
+        "x": 460,
+        "y": 60,
         "wires": [
             [
-                "df091b3c5b2f5233"
+                "103b575a71a5a986"
             ]
         ]
     },
@@ -423,7 +423,7 @@
         "type": "switch",
         "z": "f33711211a4b2d3f",
         "name": "Range",
-        "property": " ( $flowContext(\"centreidnumber\") >= payload.centreid_min and $flowContext(\"centreidnumber\") <= payload.centreid_max ) ",
+        "property": " ( $flowContext(\"centreidnumber\") >= payload.configuration.setup.centreid_min and $flowContext(\"centreidnumber\") <= payload.configuration.setup.centreid_max ) ",
         "propertyType": "jsonata",
         "rules": [
             {
@@ -433,40 +433,9 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 310,
-        "y": 120,
-        "wires": [
-            [
-                "df091b3c5b2f5233"
-            ]
-        ]
-    },
-    {
-        "id": "df091b3c5b2f5233",
-        "type": "switch",
-        "z": "f33711211a4b2d3f",
-        "name": "Action",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "jsonata_exp",
-                "v": "$exists(payload.action.mqtt)",
-                "vt": "jsonata"
-            },
-            {
-                "t": "jsonata_exp",
-                "v": "$exists(payload.action.publish)",
-                "vt": "jsonata"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 470,
+        "x": 450,
         "y": 100,
         "wires": [
-            [],
             [
                 "103b575a71a5a986"
             ]
@@ -498,8 +467,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 730,
-        "y": 200,
+        "x": 870,
+        "y": 180,
         "wires": [
             [
                 "78faafc4cb2e8c96",
@@ -521,8 +490,8 @@
         "param_3": "",
         "type_param_3": "msg",
         "f_use_debug": false,
-        "x": 610,
-        "y": 200,
+        "x": 750,
+        "y": 180,
         "wires": [
             [
                 "87479d7e7b07f359"
@@ -576,8 +545,8 @@
         "pauseActionName": "PAUSE",
         "continueActionNameType": "str",
         "continueActionName": "CONTINUE",
-        "x": 480,
-        "y": 200,
+        "x": 620,
+        "y": 180,
         "wires": [
             [
                 "325f47bbccf619f1"
@@ -604,8 +573,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 480,
-        "y": 260,
+        "x": 800,
+        "y": 80,
         "wires": [
             []
         ]
@@ -629,8 +598,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 860,
-        "y": 200,
+        "x": 1000,
+        "y": 180,
         "wires": [
             [
                 "500a998cd7b017b5"
@@ -654,12 +623,11 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 1000,
-        "y": 200,
+        "x": 1140,
+        "y": 180,
         "wires": [
             [
-                "088ec7657363e157",
-                "328d683f909a24cd"
+                "088ec7657363e157"
             ]
         ]
     },
@@ -682,25 +650,11 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1130,
-        "y": 200,
+        "x": 1270,
+        "y": 180,
         "wires": [
             [
                 "de517a1da6636eba"
-            ]
-        ]
-    },
-    {
-        "id": "e9105ec22351d22e",
-        "type": "subflow:9a693308.7ebaf",
-        "z": "f33711211a4b2d3f",
-        "name": "",
-        "x": 300,
-        "y": 200,
-        "wires": [
-            [
-                "de517a1da6636eba",
-                "5709df75de5c44f2"
             ]
         ]
     },
@@ -721,14 +675,14 @@
                 "t": "set",
                 "p": "timerDuration",
                 "pt": "msg",
-                "to": "payload.action.publish.delay",
+                "to": "payload.configuration.setup.delay",
                 "tot": "msg"
             },
             {
                 "t": "set",
                 "p": "number",
                 "pt": "flow",
-                "to": "payload.action.publish.number",
+                "to": "payload.configuration.setup.number",
                 "tot": "msg"
             },
             {
@@ -752,10 +706,11 @@
         "to": "",
         "reg": false,
         "x": 620,
-        "y": 120,
+        "y": 80,
         "wires": [
             [
-                "e9105ec22351d22e"
+                "de517a1da6636eba",
+                "5709df75de5c44f2"
             ]
         ]
     },
@@ -773,8 +728,8 @@
         "correl": "",
         "expiry": "",
         "broker": "ac0560c0180e4641",
-        "x": 850,
-        "y": 140,
+        "x": 990,
+        "y": 120,
         "wires": []
     },
     {
@@ -803,8 +758,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 180,
-        "y": 100,
+        "x": 320,
+        "y": 80,
         "wires": [
             [
                 "16a799f89623cff3",
@@ -813,21 +768,28 @@
         ]
     },
     {
-        "id": "328d683f909a24cd",
-        "type": "subflow:9a693308.7ebaf",
+        "id": "40fc0600f9ec78e7",
+        "type": "switch",
         "z": "f33711211a4b2d3f",
-        "name": "",
-        "env": [
+        "name": "Benchmark ?",
+        "property": "payload.scenario",
+        "propertyType": "msg",
+        "rules": [
             {
-                "name": "operation",
-                "value": "stop",
-                "type": "str"
+                "t": "eq",
+                "v": "wnmbench",
+                "vt": "str"
             }
         ],
-        "x": 1140,
-        "y": 140,
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 170,
+        "y": 80,
         "wires": [
-            []
+            [
+                "69873070d5f275f3"
+            ]
         ]
     },
     {
